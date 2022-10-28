@@ -9,6 +9,8 @@
     --team-bg-color:#F5F4FA;
     --footer-link-color:rgba(255, 255, 255, 0.6);
     --logo-blck-part :#000000;
+    --outline: rgba(236, 236, 236, 1);
+    --outline-projects: rgba(238, 238, 238, 1);
 }
 
 h1,h2,h3,h4,p,ul{
@@ -22,9 +24,16 @@ body {
    letter-spacing: 0.03em;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .list{
     list-style:none;
     padding: 0;
+    margin: 0;
 }
 
 .btn{
@@ -52,6 +61,10 @@ body {
     padding-right: 18px;
 }
 /* Header */
+header{
+    border: 1px solid var(--outline);
+}
+
 .container.nav{
     display: flex;
 }
@@ -166,7 +179,7 @@ body {
 
 /* Features */
 .features{
-margin-top: 94px;
+padding-top: 94px;
 }
 .features .list{
     display: flex;   
@@ -192,7 +205,8 @@ margin-top: 94px;
 }
 /* What we do */
 .what-we-do{
-   margin-top: 94px;
+   padding-top: 94px;
+   padding-bottom: 94px;
 }
 .what-we-do .list {
     display: flex;
@@ -209,7 +223,6 @@ margin-top: 94px;
 .team{
     background-color: var(--team-bg-color);
 
-    margin-top: 94px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -255,6 +268,9 @@ margin-top: 94px;
 /* Footer */
 .footer{
     background-color: var(--secondary-bg-color);
+}
+
+.footer>.container{
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -293,14 +309,32 @@ margin-top: 94px;
     color: var(--accent-color);
 }
 /* Portfolio */
+.portfolio>.container{
+    padding-top: 94px;
+    padding-bottom: 200px;
+}
 
-.filter>.btn{
+.filter.list{
+    display: flex;
+    justify-content: center;
+}
+
+.filter .item:not(:last-child){
+    margin-right: 8px;
+}
+
+.filter .btn{
     background-color:var(--inactive-btn-color);
     color:var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: inherit;
+
+    display: inline-block;
+    margin: 0 auto;
+    padding: 6px 25px;
+    min-width: 73px;
 }
 
 .filter .btn:hover,
@@ -309,13 +343,34 @@ margin-top: 94px;
     color:var(--primary-white-color);
 }
 
+.projects.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.project{
+    border: 1px solid var(--outline-projects);
+    
+    flex-basis: calc((100% - 60px) / 3);
+    padding-bottom: 20px;
+}
+
+
 .project-name{
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
+    margin-left: 24px;
 }
 .project-type{
     font-size: 16px;
     line-height: 1.8;
+
+    margin-top: 4px;
+    margin-left: 24px;
 }
