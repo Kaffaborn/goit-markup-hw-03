@@ -20,6 +20,7 @@ h1,h2,h3,h4,p,ul{
 body {
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
+   
    font-family: 'Roboto', sans-serif;
    letter-spacing: 0.03em;
 }
@@ -193,7 +194,7 @@ header{
 
 /* Features */
 .features{
-padding-top: 94px;
+    padding-top: 94px;
 }
 .features .list{
     display: flex;   
@@ -219,8 +220,8 @@ padding-top: 94px;
 }
 /* What we do */
 .what-we-do{
-   padding-top: 94px;
-   padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .what-we-do .list {
     display: flex;
@@ -282,12 +283,11 @@ padding-top: 94px;
 /* Footer */
 .footer{
     background-color: var(--secondary-bg-color);
-}
 
-.footer>.container{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 
 .logo.footer{
     color: var(--primary-white-color);
@@ -323,9 +323,9 @@ padding-top: 94px;
     color: var(--accent-color);
 }
 /* Portfolio */
-.portfolio>.container{
+.portfolio{
     padding-top: 94px;
-    padding-bottom: 200px;
+    padding-bottom: 94px;
 }
 
 .filter.list{
@@ -368,11 +368,20 @@ padding-top: 94px;
 
 .project{
     flex-basis: calc((100% - 60px) / 3);
-    padding-bottom: 20px;
 }
 
 .project-bottom{
-    border: 1px solid var(--outline-projects);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--outline-projects);
+    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--outline-projects);
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--outline-projects);
 
     padding-top: 20px;
     padding-left: 24px;
