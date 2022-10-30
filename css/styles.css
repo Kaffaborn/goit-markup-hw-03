@@ -363,7 +363,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .project{
